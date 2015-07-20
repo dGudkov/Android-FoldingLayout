@@ -163,6 +163,12 @@ public class FoldingLayout extends LinearLayout {
      * Once that is complete, it redraws itself with the new fold.
      */
     public void setFoldFactor(float foldFactor) {
+        if (foldFactor > 1) {
+            foldFactor = 1;
+        }
+        if (foldFactor < 0) {
+            foldFactor = 0;
+        }
         if (foldFactor != mFoldFactor) {
             mFoldFactor = foldFactor;
             invalidate();
