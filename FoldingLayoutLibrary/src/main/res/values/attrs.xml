@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FoldingPanelLayout">
+        <attr name="testingMode" format="boolean" />
+        <attr name="externalAnimator" format="boolean" />
+        <attr name="foldingDuration" format="integer" />
+        <attr name="foldNumbers" format="integer" />
+        <attr name="initialPanelState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
